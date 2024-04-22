@@ -1,7 +1,7 @@
 import formatNumber from '../format-number';
-import Ember from 'ember';
+import Helper from '@ember/component/helper';
 
-export default Ember.Helper.helper(function(params, options) {
+export default Helper.helper(function(params, options) {
   var value = params[0];
   return formatNumber(value, options);
 });
